@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "meanio-users@~0.1.6",
+        "scope": null,
+        "escapedName": "meanio-users",
+        "name": "meanio-users",
+        "rawSpec": "~0.1.6",
+        "spec": ">=0.1.6 <0.2.0",
+        "type": "range"
+      },
+      "/Users/user/Documents/workspace3/porkyou"
+    ]
+  ],
+  "_from": "meanio-users@>=0.1.6 <0.2.0",
+  "_id": "meanio-users@0.1.8",
+  "_inCache": true,
+  "_location": "/meanio-users",
+  "_nodeVersion": "6.6.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/meanio-users-0.1.8.tgz_1485963341010_0.5120929025579244"
+  },
+  "_npmUser": {
+    "name": "vapes",
+    "email": "vapesk@gmail.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "meanio-users@~0.1.6",
+    "scope": null,
+    "escapedName": "meanio-users",
+    "name": "meanio-users",
+    "rawSpec": "~0.1.6",
+    "spec": ">=0.1.6 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/meanio-admin",
+    "/meanio-circles"
+  ],
+  "_resolved": "https://registry.npmjs.org/meanio-users/-/meanio-users-0.1.8.tgz",
+  "_shasum": "37e1a42af54cad43beb79a6c57817ec000ef2bec",
+  "_shrinkwrap": null,
+  "_spec": "meanio-users@~0.1.6",
+  "_where": "/Users/user/Documents/workspace3/porkyou",
+  "author": {
+    "name": "Linnovate"
+  },
+  "bugs": {
+    "url": "https://github.com/linnovate/meanio-users/issues"
+  },
+  "dependencies": {
+    "angular-jwt": "latest",
+    "meanio-circles": "^0.1.x",
+    "nodemailer": "2.7.2",
+    "passport-facebook": "latest",
+    "passport-github": "latest",
+    "passport-google-oauth": "latest",
+    "passport-linkedin": "latest",
+    "passport-local": "latest",
+    "passport-twitter": "latest"
+  },
+  "description": "Users package",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "37e1a42af54cad43beb79a6c57817ec000ef2bec",
+    "tarball": "https://registry.npmjs.org/meanio-users/-/meanio-users-0.1.8.tgz"
+  },
+  "engines": {
+    "node": "4.2.x",
+    "npm": "3.x"
+  },
+  "gitHead": "c8b929fcf123b2c18173259c76639bb77613ead7",
+  "homepage": "https://github.com/linnovate/meanio-users#readme",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "linnovate",
+      "email": "lior@linnovate.net"
+    },
+    {
+      "name": "oritpersik",
+      "email": "orit@linnovate.net"
+    },
+    {
+      "name": "vapes",
+      "email": "vapesk@gmail.com"
+    }
+  ],
+  "mean": "0.7.x",
+  "name": "meanio-users",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linnovate/meanio-users.git"
+  },
+  "scripts": {},
+  "version": "0.1.8",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": "4.2.x",
+        "npm": "3.x"
+      },
+      "pkgid": "meanio-users@0.1.8"
+    },
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": "4.2.x",
+        "npm": "3.x"
+      },
+      "pkgid": "meanio-users@0.1.8"
+    }
+  ]
+}
