@@ -30,13 +30,13 @@ Icon
 # --------------------
 # Netbeans Files
 # --------------------
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-nb-configuration.xml
+# nbproject/private/
+# build/
+# nbbuild/
+# dist/
+# nbdist/
+# nbactions.xml
+# nb-configuration.xml
 
 # --------------------
 # Node Files
@@ -53,8 +53,8 @@ npm-debug.log
 # --------------------
 # Bower Files
 # --------------------
-.bower-*/
-bower_components
+# .bower-*/
+# bower_components
 
 # --------------------
 # App Files
