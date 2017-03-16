@@ -1,5 +1,17 @@
-<md-subheader class="md-primary">© CopyRight 2017 Powered by Doi Yoshihi</md-subheader>
+<md-subheader class="md-primary">© CopyRight 2017 Powered by Doi Yoshihiro</md-subheader>
 <script type="text/javascript" src="/bundle/app.js"></script>
+
+<!-- 開発用（本番では外すこと） START -->
+<script src="/meanStarter/controllers/header.js"></script>
+<script src="/meanStarter/controllers/index.js"></script>
+<script src="/meanStarter/controllers/starter.js"></script>
+<script src="/meanStarter/controllers/translation.js"></script>
+<script src="/meanStarter/routes/system.js"></script>
+<script src="/meanStarter/routes/users.js"></script>
+<!-- 開発用（本番では外すこと） END -->
+
+<!-- bower:js -->
+<!-- endbower -->
 
 {% if (process.env.NODE_ENV == 'development') %}
   <script type="text/javascript" src="{{'//' + req.hostname + ':35729/livereload.js'}}"></script>

@@ -11,10 +11,10 @@
   <span flex></span>
   
   <md-button class="md-button" aria-label="Sign Up" ui-sref="auth.register" ng-if="!hdrctr.hdrvars.authenticated">
-    Join
+    {{'JOIN'|translate}}
   </md-button>
   <md-button class="md-button" aria-label="Login" ui-sref="auth.login" ng-if="!hdrctr.hdrvars.authenticated">
-    Login
+    {{'LOGIN'|translate}}
   </md-button>
 
   <md-menu ng-if="hdrctr.hdrvars.authenticated" md-position-mode="target-right target">
@@ -29,9 +29,13 @@
       <md-menu-item>
         <md-button class="md-button" aria-label="Logout" ng-click="hdrctr.logout()">
           <md-icon>exit_to_app</md-icon>
-          Logout
+          {{'LOGOUT'|translate}}
         </md-button>
       </md-menu-item>
     </md-menu-content>
   </md-menu>
+  
+  <md-select ng-model="selectedLanguage" ng-model-options="{trackBy: '$value.id'}" ng-change="setSelectedLanguage(selectedLanguage);" style="font-size: 15px;">
+    <md-option ng-value="language" ng-repeat="language in languages">{{ language.name }}</md-option>
+  </md-select>
 </div>

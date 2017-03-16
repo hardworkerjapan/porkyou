@@ -1,0 +1,13 @@
+{
+  "LOGIN": "ログイン",
+  "LOGOUT": "ログアウト",
+  "JOIN": "ユーザ登録",
+  "FORGET_PASSWORD": "パスワードをお忘れの方はこちら",
+  "EMAIL": "Eメール",
+  "PASSWORD": "パスワード",
+  "ENGLISH": "英語",
+  "JAPANESE": "日本",
+  "NAMESPACE": {
+    "PARAGRAPH": "And it comes with awesome features!"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "LOGIN": "LOGIN",
+  "LOGOUT": "LOGOUT",
+  "JOIN": "JOIN",
+  "FORGET_PASSWORD": "FORGET PASSWORD",
+  "EMAIL": "Email",
+  "PASSWORD": "Password",
+  "ENGLISH": "English",
+  "JAPANESE": "Japanese",  
+  "NAMESPACE": {
+    "PARAGRAPH": "And it comes with awesome features!"
+  }
+}

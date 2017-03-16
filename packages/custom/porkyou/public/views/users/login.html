@@ -1,24 +1,24 @@
 <form name="loginForm" ng-submit="login.login()" data-ng-controller="LoginCtrl as login" class="login-box">
   <md-card-title>
     <md-card-title-text>
-      <span class="md-headline">Login</span>
+      <span class="md-headline">{{'LOGIN'|translate}}</span>
       <p class="error-text" ng-if="login.loginError">{{login.loginError}}</p>
     </md-card-title-text>
   </md-card-title>
   <md-card-content>
     <md-input-container class="md-block">
-      <label>Email</label>
+      <label>{{'EMAIL'|translate}}</label>
       <input type="email" ng-model="login.user.email">
     </md-input-container>
     <md-input-container class="md-block">
-      <label>Password</label>
+      <label>{{'PASSWORD'|translate}}</label>
       <input type="password" ng-model="login.user.password">
     </md-input-container>
   </md-card-content>
   <md-card-actions layout="row" layout-align="end center">
-    <md-button ui-sref="forgot-password">Forgot Password</md-button></div>
-    <md-button ui-sref="auth.register">Join</md-button>
+    <md-button ui-sref="forgot-password">{{'FORGET_PASSWORD'|translate}}</md-button></div>
+    <md-button ui-sref="auth.register">{{'JOIN'|translate}}</md-button>
     <span flex></span>
-    <md-button class="md-primary" type="submit">Login</md-button>
+    <md-button class="md-primary" type="submit">{{'LOGIN'|translate}}</md-button>
   </md-card-actions>
 </form>

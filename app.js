@@ -16,6 +16,11 @@ import 'angular-jwt';
 import 'angular-aria';
 import 'angular-animate';
 import 'angular-material';
+import 'angular-translate';
+import 'angular-translate-storage-cookie';
+import 'angular-translate-storage-local';
+import 'angular-translate-loader-static-files';
+import 'angular-translate-handler-log';
 
 window.$ = jQuery;
 
@@ -40,9 +45,12 @@ function processModules (modules) {
     packageModules.push(mn);
   }
 
-  var req = require.context('./packages', true, /\/public\/(?!tests|assets|views)(.*)\.js$/);
+//　「開発用」本番時にはコメントイン
+//  var req = require.context('./packages', true, /\/public\/(?!tests|assets|views)(.*)\.js$/);
+//  req.keys().map(req);
+  var req = require.context('./packages', true, /\/public\/(?!tests|assets|views)(.*)\index.js$/);
   req.keys().map(req);
-  req = require.context('./node_modules', true, /\/meanio-(.*)\/public\/(?!tests|assets|views)(.*)\.js$/);
+  var req = require.context('./node_modules', true, /\/meanio-(.*)\/public\/(?!tests|assets|views)(.*)\.js$/);
   req.keys().map(req);
   angular.module('mean', packageModules);
 }
