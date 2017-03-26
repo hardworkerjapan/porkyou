@@ -1,39 +1,55 @@
 <form name="signUpForm" ng-controller="RegisterCtrl as reg" ng-submit="reg.register()" class="login-box">
   <md-card-title>
     <md-card-title-text>
-      <span class="md-headline">Join</span>
+      <span class="md-headline" translate="JOIN"></span>
+      <span class="md-subhead" translate="ITSFREE"></span>
       <div ng-repeat="error in reg.registerError">
-        <p class="alert alert-danger animated fadeIn">{{error.msg}}</p>
+        <p class="alert alert-danger animated fadeIn">{{error.msg|translate}}</p>
       </div>
     </md-card-title-text>
   </md-card-title>
   <md-card-content>
-
+    <div layout-gt-xs="row">
+      <md-input-container class="md-block" flex="40" style="margin-bottom: 0">
+        <label translate="FIRSTNAME"></label>
+        <input type="text" ng-model="reg.user.first_name">
+      </md-input-container>
+      <md-input-container class="md-block" flex="40" style="margin-bottom: 0">
+        <label translate="LASTNAME"></label>
+        <input type="text" ng-model="reg.user.last_name">
+      </md-input-container>
+    </div>
     <md-input-container class="md-block">
-      <label>Full Name</label>
-      <input type="text" ng-model="reg.user.name">
-    </md-input-container>
-    <md-input-container class="md-block">
-      <label>Email Address</label>
+      <label translate="EMAIL"></label>
       <input type="email" ng-model="reg.user.email">
     </md-input-container>
     <md-input-container class="md-block">
-      <label>Username</label>
-      <input type="text" ng-model="reg.user.username">
+      <label translate="RE_ENTER_EMAIL"></label>
+      <input type="email" ng-model="reg.user.confirmEmail">
     </md-input-container>
-    <md-input-container class="md-block">
-      <label>Password</label>
+    <md-input-container class="md-block" style="margin-bottom: 0" >
+      <label translate="PASSWORD"></label>
       <input type="password" ng-model="reg.user.password">
     </md-input-container>
-    <md-input-container class="md-block">
-      <label>Confirm Password</label>
-      <input type="password" ng-model="reg.user.confirmPassword">
+    <md-input-container class="md-block" style="margin-top: 0">
+      <label translate="BIRTHDAY" style="margin-bottom: 20px"></label>
+      <date-selector layout="row" ng-model="reg.user.birthday"></date-selector>
+      </div>
     </md-input-container>
+    <md-input-container class="md-block" style="margin-bottom: 0">
+    <md-radio-group layout="row" ng-model="reg.user.gender">
+      <md-radio-button value="0" >{{'FEMALE'|translate}}</md-radio-button>
+      <md-radio-button value="1" >{{'MALE'|translate}}</md-radio-button>
+    </md-radio-group>
+    </md-input-container>
+
   </md-card-content>
   <md-card-actions layout="row" layout-align="end center">
-    <md-button ui-sref="forgot-password">Forgot Password</md-button>
-    <md-button ui-sref="auth.login">Login</md-button>
+    <md-button ui-sref="forgot-password">{{'FORGET_PASSWORD'|translate}}</md-button>
+    <md-button ui-sref="auth.login">{{'LOGIN'|translate}}</md-button>
     <span flex></span>
-    <md-button class="md-primary" type="submit">Join</md-button>
+    <md-button class="md-primary" type="submit">{{'JOIN'|translate}}</md-button>
   </md-card-actions>
+
+
 </form>

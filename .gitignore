@@ -53,7 +53,7 @@ npm-debug.log
 # --------------------
 # Bower Files
 # --------------------
-# .bower-*/
+.bower-*/
 # bower_components
 
 # --------------------

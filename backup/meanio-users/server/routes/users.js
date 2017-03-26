@@ -37,10 +37,10 @@ module.exports = function(MeanUser, app, auth, database, passport) {
       app.route('/api/login')
         .post(passport.authenticate('local', {
           failureFlash: false
-        }), function(req, res) {      
+        }), function(req, res) {
           var payload = req.user;
           payload.redirect = req.body.redirect;
-          var escaped = JSON.stringify(payload);      
+          var escaped = JSON.stringify(payload);
           escaped = encodeURI(escaped);
           // We are sending the payload inside the token
           var token = jwt.sign(escaped, config.secret);
@@ -106,7 +106,7 @@ module.exports = function(MeanUser, app, auth, database, passport) {
   }
 
   if(config.strategies.twitter.enabled)
-  {    
+  {
       // Setting the twitter oauth routes
       app.route('/api/auth/twitter')
         .get(passport.authenticate('twitter', {

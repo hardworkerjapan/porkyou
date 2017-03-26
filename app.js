@@ -35,7 +35,7 @@ angular.element(document).ready(function () {
 });
 
 function processModules (modules) {
-  var packageModules = ['ngCookies', 'ngResource', 'ui.router', 'ui.select', 'ngSanitize', 'ngMaterial'];
+  var packageModules = ['ngCookies', 'ngResource', 'ui.router', 'ui.select', 'ngSanitize', 'ngMaterial', 'pascalprecht.translate'];
   var m;
   var mn;
   for (var index in modules) {
@@ -50,6 +50,8 @@ function processModules (modules) {
 //  req.keys().map(req);
   var req = require.context('./packages', true, /\/public\/(?!tests|assets|views)(.*)\index.js$/);
   req.keys().map(req);
+  // var req = require.context('./node_modules', true, /\/meanio-(.*)\/public\/(?!tests|assets|views)(.*)\.js$/);
+  // req.keys().map(req);
   var req = require.context('./node_modules', true, /\/meanio-(.*)\/public\/(?!tests|assets|views)(.*)\.js$/);
   req.keys().map(req);
   angular.module('mean', packageModules);

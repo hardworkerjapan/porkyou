@@ -1,0 +1,14 @@
+{
+  "name": "tests",
+  "version": "0.0.1",
+  "description": "Some description of tests",
+  "author": {
+    "name": "mean scaffold"
+  },
+  "mean": "1.0",
+  "dependencies": {},
+  "license": "MIT",
+  "scripts": {
+    "postinstall" : "bower install"
+  }
+}
